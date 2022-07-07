@@ -21,7 +21,7 @@ public class base {
                 BufferedReader reader = new BufferedReader(new InputStreamReader(is));
 		//FileInputStream fls= new FileInputStream("/Users/sushmitha/eclipse-workspace/Test/src/main/java/resources/data.properties");
 		
-		prop.load(fls);
+		prop.load(reader);
 		
 		String browserName = prop.getProperty("browser");
 		if(browserName.equals("chrome"))
