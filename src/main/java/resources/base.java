@@ -14,7 +14,9 @@ public class base {
 	public WebDriver initializeDriver() throws IOException
 	{
 		Properties prop= new Properties();
-		FileInputStream fls= new FileInputStream("/Users/sushmitha/eclipse-workspace/Test/src/main/java/resources/data.properties");
+		InputStream is = getClass().getResourceAsStream("/data.properties");
+                BufferedReader reader = new BufferedReader(new InputStreamReader(is));
+		//FileInputStream fls= new FileInputStream("/Users/sushmitha/eclipse-workspace/Test/src/main/java/resources/data.properties");
 		
 		prop.load(fls);
 		
