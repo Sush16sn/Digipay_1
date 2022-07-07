@@ -13,7 +13,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class base {
 
-	static WebDriver driver;
+	protected static WebDriver driver;
 	public WebDriver initializeDriver() throws IOException
 	{
 		Properties prop= new Properties();
