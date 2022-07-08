@@ -25,7 +25,8 @@ public class login extends base{
 	@BeforeTest
 	public void setUp() throws IOException
 	{
-		driver = initializeDriver();
+		base b = new base();
+		driver = b.initializeDriver();
 		driver.get("https://app-moccona.divipay.com/app/business-signup");
 	}
 	
